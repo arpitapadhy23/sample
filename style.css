@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya:wght@200;300;400;600&display=swap');
+:root{
+    --yellow:#f9ca24;
+}
+*{
+    font-family: 'Pattaya';
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--yellow);
+    color: #333;
+}
+html{
+    font-size: 90%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1.2em;
+}
+
+html::-webkit-scrollbar-track{
+    background:#222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--yellow);
+}
+body{
+    background:#111;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+section{
+    min-height: 50vh;
+    padding: 3px;
+}
+.btn{
+    padding:.5rem 3rem;
+    background:#333;
+    color:#fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+.btn i{
+    padding:0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    background:var(--yellow);
+}
+.heading{
+    text-align: justify;
+    margin: none;
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-bottom: none;
+    color:#fff;
+}
+
+.heading span{
+    color:var(--yellow);
+}
+header{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1000;
+    height:100%;
+    width:35rem;
+    background:#1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+header .user .name{
+    font-size: 2.8rem;
+    color:#fff;
+}
+header .user .work{
+    font-size: 1rem;
+    color:#eee;
+}
+header .navbar{
+    width:80%;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 0rem 3rem;
+}
+
+
+header .navbar ul li a{
+    display: block;
+    padding:1rem;
+    margin:1.5rem 0;
+    background:#333;
+    color:#fff;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+}
+
+header .navbar ul li a:hover{
+    background:var(--yellow);
+}
+#menu{
+    position: fixed;
+    top:2rem; right:2rem;
+    background:#333;
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+.home{
+    display: flex;
+    justify-content: center ;
+    flex-flow: column;
+    padding:0 15rem;
+}
+
+.home h3{
+    font-size: 2.5rem;
+    color:#fff;
+}
+
+.home h1{
+    font-size:3rem;
+    color:#fff;
+}
+
+.home h1 span{
+    color:var(--yellow);
+}
+
+.home p{
+    font-size:1.5rem;
+    color:#eee;
+    padding: 1rem 0;
+}
+.about{
+    display: flex;
+    justify-content: center ;
+    flex-flow: column;
+    padding:0 15rem;
+}
+.about .info{
+    font-size: 1.2rem;
+    color:azure;
+}
+.education{
+    display: flex;
+    justify-content: center ;
+    flex-flow: column;
+    padding:0 15rem;
+}
+.education .data span{
+    color: var(--yellow);
+}
+.education .data h3{
+    font-size: 1.5rem;
+    color:azure;
+}
+.contact{
+    display: flex;
+    justify-content: center ;
+    flex-flow: column;
+    padding:0 15rem;
+}
+.contact .content h3{
+    font-size: 1.5rem;
+    color:azure;
+}
+.top{
+    position: fixed;
+    bottom:7.5rem; right: 2rem;
+    z-index: 100;
+    display: none;
+}
+header .user img{
+    height:12rem;
+    width:12rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border:.7rem solid var(--yellow);
+}
