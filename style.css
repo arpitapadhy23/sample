@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1.1rem;
+}
+.navbar ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid blue;
+}
+.navbar img{
+    height: 100px;
+    width: 100px;
+    justify-content: left;
+    align-items: right;
+    padding: 20px;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: left;
+    align-items: right;
+    background-color:;
+    color: #000000dc;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background-color: thistle;
+    top: 0;
+    left: 0;
+    background: url('https://spectrumcet.com/assets/spectrum.png') no-repeat center center/cover;
+    height: 700px;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    background-color: thistle;
+}
+#about h1{
+    margin: 60px;
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid #fff4;
+    color:black;
+}
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.gallery img{
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+    margin: 10px;
+}
+.gallery img:hover{
+    background-color: teal;
+    cursor: pointer;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 100%;
+}
+#about h1{
+    color: black;
+    margin: 50px;
+    
+}
+.about{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.name span{
+    color: blueviolet;
+    align-content: center;
+
+}
+.name{
+    padding: 10px;
+    color: black;
+    align-items: center;
+    
+}
+
+.name h2{
+    font-size: 1.5rem;
+    padding: 2px;
+    
+}
+#projects{
+    display: flex;
+    flex-direction: column;
+    background-color:thistle;
+}
+#projects h1{
+    margin: 60px;
+    color:black;
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding:1rem;
+    border-bottom: .1rem solid #fff4;
+    
+}
+.columns{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 50px;
+}
+
+.box{
+    height: 290px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+.box h2{
+    color: teal;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.box p{
+    color:black;
+    font-size: 1.1rem;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color: thistle;
+}
+#contact h1{
+      margin: 60px;
+      color: black;
+      text-align: center;
+      margin:0 6rem;
+      font-size: 4rem;
+      padding:1rem;
+      border-bottom: .1rem solid #fff4;
+      
+}
+.horizontal{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.horizontal::before{
+    content: "";
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.horizontal a{
+     display: flex;
+    list-style: none;
+    padding: 5px 20px;
+    text-decoration: none;
+    height: 50px;
+    width: 90px;
+}
